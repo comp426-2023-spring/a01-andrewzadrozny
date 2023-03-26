@@ -1,0 +1,23 @@
+{
+  "name": "andrews-private-web-server",
+  "version": "0.0.1",
+  "description": "This package contains a very simple web server and it's for my comp426 class",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "port",
+    "node",
+    "fs",
+    "args",
+    "http"
+  ],
+  "author": "@andrewzadrozny",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
