@@ -17,12 +17,14 @@ const port = args["port"] || 3000;
 
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
+var data_copy;
 
 fs.readFile("./public/index.html", (err, data => {
         if (err) {
                 console.error(err);
                 return
         }
+	data_copy = data;
 }
 
 
@@ -45,9 +47,8 @@ const server = http.createServer((_, res) => {
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
 
-server.listen(port, () => {
-	 console.log(`Server listening on port ${port}`);
-});
+server.listen(port);
+console.log(`Server listening on port ${port}`);
 
 
 // That's it! You're all done!
