@@ -19,7 +19,7 @@ const port = args["port"] || 3000;
 // Do not be nice about exiting.
 var data_copy;
 
-fs.readFile("./public/index.html", (err, data => {
+fs.readFile("./public/index.html", 'utf8', (err, data => {
         if (err) {
                 console.error(err);
                 return
