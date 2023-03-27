@@ -24,7 +24,7 @@ fs.readFile('./public/index.html','utf8', (err, data) => {
                 return;
         }
 	copy = data;
-}
+})
 
 
 
